@@ -9,6 +9,7 @@ Scans a Steam library for folders that do not contain .exe files and ignores Ste
 Moves selected folders to a backup location instead of deleting them immediately
 Restores backed-up folders back into the active library when needed
 Allows excluding specific folders from scanning
+
 <img width="1398" height="860" alt="image" src="https://github.com/user-attachments/assets/65d3ccce-1ce7-44cd-b92c-0b23c2bb0639" />
 
 **How Paths Work**
@@ -33,16 +34,36 @@ Daily log files inside Steam Sweeper Logs
 Log files are automatically created in the active library folder, one file per day:
 
 Steam Sweeper Logs\YYYY-MM-DD.log
+
+<img width="746" height="613" alt="image" src="https://github.com/user-attachments/assets/7bb5d243-801f-41dd-b2ed-d447e2dc5641" />
+
+**Safety Notes**
 Safety Notes
 
 SteamSweeper is designed to be safe, but it performs real file system operations with administrator privileges.
-<img width="746" height="613" alt="image" src="https://github.com/user-attachments/assets/7bb5d243-801f-41dd-b2ed-d447e2dc5641" />
+
+For safety reasons, the following locations are permanently blocked and cannot be unlocked inside the app:
+
+Drive root paths such as C:\, D:\, or E:\
+Windows system folders and their subfolders
+Users
+ProgramData
+$Recycle.Bin
+System Volume Information
+These protections also apply to manual library paths, backup paths, and file operations such as scan, backup, restore, delete, and log creation.
+_(If there is interest, I can enable these features later, but for the first version, I think it’s safer not to do so.)_
+
+
+<img width="355" height="159" alt="image" src="https://github.com/user-attachments/assets/5f179e1d-c7a8-44db-af22-1570544d378f" />
+
+
 **Recommended usage**
 
 Review logs before deleting anything
 Use backup instead of permanent deletion whenever possible
-
 ⚠️Avoid manual path override unless you fully understand the target library structure⚠️
+
+
 
 **Permissions**
 The application runs with administrator privileges because some Steam libraries may be located in protected directories such as Program Files.
