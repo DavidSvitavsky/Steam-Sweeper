@@ -94,10 +94,10 @@ Use backup instead of permanent deletion whenever possible
 **Permissions**
 The application runs with administrator privileges because some Steam libraries may be located in protected directories such as Program Files.
 
-**Build**
-Requirements
+
+**Requirements**
 Windows
-.NET 8 SDK
+
 
 **Author**
 David Svitavský
