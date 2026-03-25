@@ -1,6 +1,9 @@
 **SteamSweeper**
 
-SteamSweeper is a Windows desktop application for scanning Steam library folders and identifying likely empty or leftover game installations.
+SteamSweeper is a Windows tool for detecting leftover Steam game files and orphaned installation data.
+
+
+It helps you reclaim disk space safely without manually searching Steam folders.
 
 **What It Does**
 Automatically detects the Steam installation path from the Windows registry
@@ -18,6 +21,7 @@ Allows excluding specific folders from scanning
 <img width="1398" height="860" alt="image" src="https://github.com/user-attachments/assets/65d3ccce-1ce7-44cd-b92c-0b23c2bb0639" />
 
 **How Paths Work**
+
 SteamSweeper works with standard Steam library structures, including:
 
 steamapps/common
@@ -38,6 +42,7 @@ The backup view allows you to uncheck items before permanent deletion
 
 
 **Logging**
+
 SteamSweeper writes activity logs in two locations:
 
 In-app output panel
@@ -51,7 +56,7 @@ Steam Sweeper Logs\YYYY-MM-DD.log
 <img width="746" height="613" alt="image" src="https://github.com/user-attachments/assets/7bb5d243-801f-41dd-b2ed-d447e2dc5641" />
 
 **Safety Notes**
-Safety Notes
+
 
 SteamSweeper is designed to be safe, but it performs real file system operations with administrator privileges.
 
